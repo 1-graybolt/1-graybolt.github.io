@@ -1,0 +1,18 @@
+# The TCP/IP Model
+
+The model has four layers
+
+## Applications
+
+## Transport
+
+## Internet
+
+## Link (Network Access)
+
+Protocols in this layers include:
+
+-wifi
+-Bluetooth
+-LTE
+-Ethernet
