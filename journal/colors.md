@@ -16,7 +16,11 @@ FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
 FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
 FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
 
-## The Recreation is the fillowing
+## The Recreation is the following
 
-<img title="Link" alt="Recreation" src="../../images/Recreation.png">
+<img alt="Recreation" src="../../images/Recreation.png">
+
+## The Drawing is the following
+
+<img alt="Drawing" scr="../../../images/Drawing.png">
   
