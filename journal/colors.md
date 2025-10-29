@@ -18,5 +18,5 @@ FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
 
 ## The Recreation is the fillowing
 
-![Recreation](../../images/Recreation.png)
+![Recreaction](Recreation.png).
   
