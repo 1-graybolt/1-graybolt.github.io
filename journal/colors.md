@@ -22,5 +22,6 @@ FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
 
 ## The Drawing is the following
 
-<img alt="Drawing" scr="../../images/Drawing.png">
+<img alt="Drawing"    src="../../images/Drawing.png">
+
   
