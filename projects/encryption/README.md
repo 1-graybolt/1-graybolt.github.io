@@ -65,29 +65,39 @@ Assume that each packet can hold two bytes. Fill in the packet information below
     Source: [Edom]
     Destination: [Chris]  
     Sequence: 1/3
-    Data: [binary for char 1] [binary for char 2]
+    Data: [01011010] [01100111]
     =========
     Packet 2:
 
-    Source: [Your Name]
-    Destination: [Partner's Name]
+    Source: [Edom]
+    Destination: [Chris]
     Sequence: 2/3 
-    Data: [binary for char 3] [binary for char 4]
+    Data: [00000101] [01011010]
     =========
     Packet 3:
 
-    Source: [Your Name]
-    Destination: [Partner's Name]
+    Source: [Edom]
+    Destination: [Chris]
     Sequence: 3/3
-    Data: [binary for char 5] [binary for char 6]
+    Data: [01000111] [01010001]
     =========
 
 ## Part 4: Reflection Questions
 
 - What is the difference between symmetric and asymmetric encryption? What purpose did each serve in this simulation?
+Symmetric encryption uses the same key for both encryption and decryption. Asymmetric encryption uses different key for encryption and decryption. We used Asymmetric encryption to select the numbers that would be our keys for the conversation we will have later. We used Asymetric encryption first because we wanted a more secure location to exchange the keys and this helps us protect the keys we will use later. This also makes it harder for hackers to ear drop on our conversation. After we got the key we used Symmetric encryption because it makes it makes it easier encrypt and decrypt for us. We also know a shared secret that other people dont now about. Thus its still harder for hackers to listen and now what were talking about. Even if if they now the shared secret for the first conversation. Our shared secret keeps changing so they would not now everything we talked about just the bit of the conversation. 
+
 - Why is it important that this protocol uses a new key for each message?
+Its very important because if someone(who shouldnt get the conversation) gets the first shared secret key then they won't be able to know every conversation/everything we talked about.  
+
 - Why is it important that you never share your secret key?
-- In the transport layer, do these messages use TCP or UDP? Why?
+Its important to never share your secret key because if you share your secret key then the person who you shared it with can inpersonate you and can see/read every conversation you have.
+
+- In the transport layer, do these messages use TCP or UDP? Why? 
+The messages use TCP because the transmittion is guranteed the messages also take a while to encrypt and decrypt. 
+
 - Now that you've created packets in the transport layer, give a short explanation of what happens to these packets in the internet layer and in the link layer.
+In the internet layer the packets are routed to different networks. While on the link layer packets are physically addressed.
 - This protocol successfully encrypts the **content** of the message. Even though and adversary in the middle can't read the content of the message, what other
 information can they still see?
+The protocol that sucessfully encrypts the content of the message is https. However even though the adversary in the middle cant read the content of the message, they can still where the connection is coming from and who is communicating with whom.
