@@ -60,21 +60,21 @@ include leading zeroes so that each character is 8 bits):
 Assume that each packet can hold two bytes. Fill in the packet information below with the binary values you computed above.
 
     =========
-    Packet 1:
+    Packet 1: Zg
 
     Source: [Edom]
     Destination: [Chris]  
     Sequence: 1/3
     Data: [01011010] [01100111]
     =========
-    Packet 2:
+    Packet 2:  5Z
 
     Source: [Edom]
     Destination: [Chris]
     Sequence: 2/3 
     Data: [00000101] [01011010]
     =========
-    Packet 3:
+    Packet 3: GQ
 
     Source: [Edom]
     Destination: [Chris]
