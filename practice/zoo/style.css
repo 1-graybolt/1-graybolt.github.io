@@ -1,4 +1,10 @@
    table, tr, th, td{
               border: 1px solid black;
-           border-collapse;}                                                                                                                                                                            {background-color: Lemonchiffon;
-		   </Style>
+           border-collapse;}                                                body {background-color: Lemonchiffon;}
+	   h1{background-color:PapayaWhip;}
+	   #firstlink{backgrond-color: BlanchedAlmond;}
+	   #info{background-color: cyan;}
+	   .checker{background-color: chartreuse;}
+	   </Style>
+
+

@@ -4,12 +4,7 @@
     <meta charset="UTF-8">
     <title>Zoo Overview</title>
     <script src="../js/init.js"></script>
-    <link rel"stylesheet" href"style.css">
-    <style>                                                                                          
-   table, tr, th, td{                                                                                
-           border: 1px solid black;                                                           
-         border-collapse;}                                                                                                                                                                             body{background-color: Lemonchiffon;}                                                     
-          </Style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -25,14 +20,15 @@
     <main>
         <section>
             <h2>Zoo Information</h2>
-            <p>Our zoo is home to hundreds of animals from all over the world. Here's a quick guide to help you plan your visit:</p>
+	    <div id="info">
+		    <p>Our<span id "zoo"> zoo</span> is home to hundreds of animals from all over the world. Here's a quick guide to help you plan your visit:</p>
             <table>
                 <caption>Zoo Hours and Admission</caption>
                 <thead>
                     <tr>
-                        <th>Day</th>
-                        <th>Hours</th>
-                        <th>Admission</th>
+			    <th class="checker">Day</th>
+			    <th class="checker">Hours</th>
+			    <th class="checker">Admission</th>
                     </tr>
                 </thead>
                 <tbody>
