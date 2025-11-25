@@ -1,7 +1,15 @@
-   table, tr, th, td{
-              border: 1px solid black;
-           border-collapse;}                                                body {background-color: Lemonchiffon;}
+   table, tr, th, td{             
+              border: 1px solid black;         
+           border-collapse;}                                                  body {background-color: Lemonchiffon; Font-family:"Tahoma","Helvetica",sans-serif;}
 	   h1{background-color:PapayaWhip;}
+Header {background-color:Cyan;
+border: 3px solid black;
+padding 30px;
+border-left: 5px dashed green;	
+margin: 20px;
+margin-left: 100px;
+text-align: center;}
+table{width: 100px; margin: auto;}
 	   #firstlink{backgrond-color: BlanchedAlmond;}
 	   #info{background-color: cyan;}
 	   .checker{background-color: chartreuse;}
