@@ -14,6 +14,10 @@ table, tr, th, td{
  12            #firstlink{backgrond-color: BlanchedAlmond;}
  13            #info{background-color: cyan;}:
  14            .checker{background-color: chartreuse;}
+            a img {
+              pointer-events: auto;
+              cursor: pointer;
+            }
  15            </Style>
  16 
  17 
