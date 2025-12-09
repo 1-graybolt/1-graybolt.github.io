@@ -41,7 +41,7 @@ read -p "Enter the secret message you want to encrypt: " secret_message
 echo -n "$secret_message" > rsa_encryption_activity/send/secret_message.txt
 
 # Check the version of OpenSSL
-openssl_version=$(openssl version)
+
 
 if [[ "$openssl_version" =~ ^OpenSSL ]]; then
     # Convert the selected key to PEM format
