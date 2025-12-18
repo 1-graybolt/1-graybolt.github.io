@@ -1,0 +1,110 @@
+ <html>
+    <head>
+        <style>
+            body{
+                background: linear-gradient(135deg, #1a2980, #26d0ce);
+                height: 100vh;
+            }
+            h1{
+                text-align: center;
+                font-family: Tahoma, sans-serif;
+                color: white;
+            }
+            .container {
+              display: grid;
+              width: 80vw;
+              height: 80vh;
+              margin: auto;
+              grid-template-columns: 1fr 1fr 1fr;
+              grid-template-rows: 1fr 1fr 1fr;
+              background-color: Thistle;
+              padding: 10px;
+              border-radius: 20px;
+              border: 8px solid red;
+            }
+            .heart {
+              height: 20vh; /* adjust to control the size */
+              aspect-ratio: 1;
+              --_m: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
+              -webkit-mask-box-image: var(--_m);
+                         mask-border: var(--_m);
+              clip-path: polygon(-41% 0,50% 91%, 141% 0);
+              background-color: chocolate;
+              margin: auto;
+            }
+            /* fallback until better support for mask-border */
+            @supports not (-webkit-mask-box-image: var(--_m)) { 
+              .heart {
+                mask:
+                 radial-gradient(at 70% 31%,#000 29%,#0000 30%),
+                 radial-gradient(at 30% 31%,#000 29%,#0000 30%),
+                 conic-gradient(#000 0 0) bottom/100% 50% no-repeat;
+              }
+            }
+            #chocolateheart{
+                grid-column-start: 3;
+                grid-row-start:2;
+            }
+            .lilbits{
+                grid-column-start: 1;
+                grid-row-start: 1;
+                display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+              grid-template-rows: 1fr 1fr 1fr;
+            }
+            #mnm{
+                grid-column-start:1;
+                grid-row-start:1;
+                width:10vh;
+                height:10vh;
+                background-color:red;
+                border-radius:50%;
+                margin: auto;
+                display: grid;
+                place-items: center;
+                font-size: 2em;
+            }
+            #mm{
+                grid-column-start:1;
+                grid-row-start:2;
+                width:10vh;
+                height:10vh;
+                background-color:red;
+                border-radius:50%;
+                margin: auto;
+                display: grid;
+                place-items: center;
+                font-size: 2em;
+            }
+	    #no{
+                   grid-column-start:1;
+                   grid-row-start:3;
+                   width:10vh;
+                   height:10vh;
+                   background-color:red;
+                   border-radius:50%;
+                   margin: auto;
+                   display: grid;
+                   place-items: center;
+                  font-size: 2em;
+              }
+
+
+        </style>
+    </head>
+    <body>
+        <h1>Here, I got you some chocolates &lt;3</h1>
+        <div class="container">
+            <div class="heart" id="chocolateheart"></div>
+            <div class="lilbits">
+                <div id="mnm">
+                
+                </div>
+		<div class"mm" id="mm"</div>
+		<div id="no">
+            </div>
+            <!-- TODO: Add some more divs here, and style them
+                to fill in the other sections of the chocolate box -->
+        </div>
+    </body>
+ </html> 
