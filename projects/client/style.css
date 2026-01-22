@@ -1,0 +1,39 @@
+* , *::before, *::after { box-sizing: border-box; }
+body{
+  background-color: #E9F7EA;
+  color: #111111;
+  font-family: Tahoma, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  background-color: #E9F7EA;
+  border: 3px solid black;
+  padding: 8px 0;
+  margin: 20px 0;
+}
+
+header nav{
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav h1{
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+header nav a{color: #111111; text-decoration: none}
+header nav a:focus-visible{outline: 3px solid #ffbf47; outline-offset: 2px}
+
+
+table, tr, th, td{border: 1px solid black; border-collapse: collapse}
+table{ width: 100px; margin: auto }
+
+#firstlink{ background-color: BlanchedAlmond }
+#info{ background-color: rgb(168, 214, 214) }
+.checker{ background-color: chartreuse }
