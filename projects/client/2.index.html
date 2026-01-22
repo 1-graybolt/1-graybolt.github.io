@@ -2,19 +2,38 @@
 
 <html lang ="en">
 <head>
+<script src="../js/validate.js"></script>
 <meta charset="UTF-8">
 <title>Small Restaurants!</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
-		<nav>
-				<a href="index.html">Home</a>
-				<a href="2.index.html">Forms</a>
-				<a href="3.index.html">About</a>
-		</nav>
+	<nav>
+ 		<a href="index.html">Home</a>
+ 		<a href="2.index.html">Forms</a>
+ 		<a href="3.index.html">About</a>
+ 	</nav>
 </header>
-<p>adding stuff</p>
+<form action="https://httpbin.org/post" method="post">
+	<label>What is your name?
+		<input type="text" name="yourname">
+	</label>
+	<br>
+	<label>What is your phone number?
+		<input type="tel" name="phone">
+	</label>
+	<br>
+	<label>What would you like to get today?
+		<input type="text" name="order">
+	</label>
+	<br>
+	<label>Do you have any suggestions or comments?
+		<textarea name="comments"></textarea>
+	</label>
+	<br>
+	<button type="submit">Submit</button>
+</form>
 <footer>
 <p>&copy; 2026 Edoms website. All rights reserved.</p>
 </footer>

@@ -8,7 +8,7 @@ body{
 }
 
 header{
-  background-color: #E9F7EA;
+  background-color: #D6EAF8;
   border: 3px solid black;
   padding: 8px 0;
   margin: 20px 0;
@@ -36,4 +36,4 @@ table{ width: 100px; margin: auto }
 
 #firstlink{ background-color: BlanchedAlmond }
 #info{ background-color: rgb(168, 214, 214) }
-.checker{ background-color: chartreuse }
+.checker{ background-color: #D6EAF8 }
