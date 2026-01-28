@@ -5,14 +5,14 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
-  text-align: center;
+
 }
 
 h1 {
   background-color: #4A90E2;
   color: white;
   padding: 10px;
-  text-align: left;
+
 }
 
 a:focus { outline: 3px solid #FF6B6B; outline-offset: 2px; }
