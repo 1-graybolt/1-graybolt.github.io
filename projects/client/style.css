@@ -29,12 +29,12 @@ header nav h1{
 
 .right-image {
   position: absolute;
-  top: 100%;
-  right: 8px;
+  top: 50%;
+  right: 4px;
   width: 150px;
   max-width: 35%;
-  margin-top: 8px;
-  z-index: 1000;
+  margin-top: 4px;
+  z-index: 500;
 }
 
 
