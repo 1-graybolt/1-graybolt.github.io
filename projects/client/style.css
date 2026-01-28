@@ -27,6 +27,14 @@ header nav h1{
   font-weight: 700;
 }
 
+.left-image {
+  float: left;
+  width: 300px;
+  max-width: 35%;
+  margin: 0 1rem 1rem 0;
+  display: block;
+}
+
 header nav a{color: #111111; text-decoration: none}
 header nav a:focus-visible{outline: 3px solid #ffbf47; outline-offset: 2px}
 
