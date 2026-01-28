@@ -27,16 +27,16 @@ header nav h1{
   font-weight: 700;
 }
 
-.left-image {
-  position: fixed;
-  top: 0;
-  right: 0;
+.right-image {
+  position: absolute;
+  top: 100%;
+  right: 8px;
   width: 300px;
   max-width: 35%;
-  margin: 0;
-  display: block;
+  margin-top: 8px;
   z-index: 1000;
 }
+
 
 header nav a{color: #111111; text-decoration: none}
 header nav a:focus-visible{outline: 3px solid #ffbf47; outline-offset: 2px}
