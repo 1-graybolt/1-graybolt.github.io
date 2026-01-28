@@ -30,7 +30,7 @@ header nav h1{
 .left-image {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 300px;
   max-width: 35%;
   margin: 0;
