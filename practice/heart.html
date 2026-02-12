@@ -35,11 +35,12 @@ ctx.lineTo(0,200); //line back to the start
 //ellipe
 ctx.beginPath();
 ctx.fillStyle="green"
-ctx.ellipe(300,300, //x,y of the center
+ctx.ellipse(
+300,300, //x,y of the center
 300, //radius along the x axis
 100, //radius along the y axis
-0, //rotation
-0,2*math.PI //start,stop
+Math.PI/4, //rotation
+Math.PI, 2*Math.PI //start,stop
 )
 ctx.fill();
 
