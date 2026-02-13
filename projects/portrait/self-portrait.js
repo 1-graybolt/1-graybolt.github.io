@@ -19,7 +19,7 @@ ctx.beginPath();
 ctx.ellipse(480, 350, 20, 20, 0, 0, Math.PI * 2);
 ctx.fill();
 //right pupil
-ctx.fillStyle = "black";
+ctx.fillStyle = "brown";
 ctx.beginPath();
 ctx.ellipse(320, 350, 10, 10, 0, 0, Math.PI * 2);
 ctx.fill();
@@ -28,7 +28,7 @@ ctx.beginPath();
 ctx.ellipse(480, 350, 10, 10, 0, 0, Math.PI * 2);
 ctx.fill();
 //outside eyes
-ctx.strokeStyle = "black";
+ctx.strokeStyle = "white";
 ctx.lineWidth = 5;
 ctx.beginPath();
 ctx.ellipse(320, 350, 30, 30, 0, 0, Math.PI * 2);
