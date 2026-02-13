@@ -29,7 +29,7 @@ ctx.ellipse(480, 350, 10, 10, 0, 0, Math.PI * 2);
 ctx.fill();
 //nose
 ctx.lineWidth = 5; 
-ctx.strokeStyle = "tan"; 
+ctx.strokeStyle = "black"; 
 ctx.beginPath();
 ctx.moveTo(400, 400); 
 ctx.lineTo(380, 450); 
