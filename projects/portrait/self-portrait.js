@@ -27,3 +27,15 @@ ctx.fill();
 ctx.beginPath();
 ctx.ellipse(480, 350, 10, 10, 0, 0, Math.PI * 2);
 ctx.fill();
+//nose
+ctx.beginPath();
+ctx.moveTo(400, 350);
+ctx.lineTo(380, 450);
+ctx.lineTo(420, 450);
+ctx.closePath();
+ctx.fill();
+//mouth
+ctx.beginPath();
+ctx.arc(400, 500, 50, 0, Math.PI, false);
+ctx.fillStyle = "red";
+ctx.fill();
