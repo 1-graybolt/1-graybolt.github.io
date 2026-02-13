@@ -18,3 +18,12 @@ ctx.fill();
 ctx.beginPath();
 ctx.ellipse(480, 350, 20, 20, 0, 0, Math.PI * 2);
 ctx.fill();
+//right pupil
+ctx.fillStyle = "white";
+ctx.beginPath();
+ctx.ellipse(320, 350, 10, 10, 0, 0, Math.PI * 2);
+ctx.fill();
+//left pupil
+ctx.beginPath();
+ctx.ellipse(480, 350, 10, 10, 0, 0, Math.PI * 2);
+ctx.fill();
