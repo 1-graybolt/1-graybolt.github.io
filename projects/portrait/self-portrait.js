@@ -28,13 +28,12 @@ ctx.beginPath();
 ctx.ellipse(480, 350, 10, 10, 0, 0, Math.PI * 2);
 ctx.fill();
 //nose
-ctx.lineWidth = 5; 
-ctx.strokeStyle = "black"; 
+ctx.fillStyle="Black";
 ctx.beginPath();
 ctx.moveTo(400, 400); 
 ctx.lineTo(380, 450); 
-ctx.lineTo(420, 450); 
-ctx.lineTo(400, 400);
+ctx.lineTo(420, 450);
+ctx.stroke(); 
 //mouth
 ctx.beginPath();
 ctx.arc(400, 500, 50, 0, Math.PI, false);
