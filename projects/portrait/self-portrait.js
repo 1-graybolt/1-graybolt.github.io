@@ -37,5 +37,5 @@ ctx.fill();
 //mouth
 ctx.beginPath();
 ctx.arc(400, 500, 50, 0, Math.PI, false);
-ctx.fillStyle = "brown";
+ctx.fillStyle = "black";
 ctx.fill();
