@@ -27,3 +27,12 @@ ctx.fill();
 ctx.beginPath();
 ctx.ellipse(480, 350, 10, 10, 0, 0, Math.PI * 2);
 ctx.fill();
+//outside eyes
+ctx.strokeStyle = "black";
+ctx.lineWidth = 5;
+ctx.beginPath();
+ctx.ellipse(320, 350, 30, 30, 0, 0, Math.PI * 2);
+ctx.stroke();
+ctx.beginPath();
+ctx.ellipse(480, 350, 30, 30, 0, 0, Math.PI * 2);
+ctx.stroke();
