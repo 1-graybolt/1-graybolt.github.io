@@ -9,12 +9,12 @@ ctx.fillStyle = "#ae834b";
 ctx.beginPath();
 ctx.ellipse(400, 400, 150, 200, 0, 0, Math.PI * 2);
 ctx.fill(); 
-// right eyes Sclera
+// right eyes 
 ctx.fillStyle = "White";
 ctx.beginPath();
 ctx.ellipse(320, 350, 20, 20, 0, 0, Math.PI * 2);
 ctx.fill(); 
-// left eyes Sclera
+// left eyes 
 ctx.beginPath();
 ctx.ellipse(480, 350, 20, 20, 0, 0, Math.PI * 2);
 ctx.fill();
@@ -115,13 +115,7 @@ ctx.beginPath();
 ctx.moveTo(400, 670);
 ctx.lineTo(400, 800);
 ctx.stroke();
-// Right Iris
-ctx.fillStyle = "blue";
-ctx.beginPath();
-ctx.ellipse(320, 350, 10, 10, 0, 0, Math.PI * 2);
-ctx.fill();
-// Left Iris
-ctx.beginPath();
-ctx.ellipse(480, 350, 10, 10, 0, 0, Math.PI * 2);
-ctx.fill();
+//Scarf
+ctx.fillStyle = "red";
+ctx.fillRect(320, 590, 160, 20);
 
