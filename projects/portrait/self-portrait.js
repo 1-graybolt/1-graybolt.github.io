@@ -115,7 +115,14 @@ ctx.beginPath();
 ctx.moveTo(400, 670);
 ctx.lineTo(400, 800);
 ctx.stroke();
-//Scarf
-ctx.fillStyle = "red";
-ctx.fillRect(320, 590, 160, 20);
+//fingers
+ctx.fillStyle = "#ae834b";
+ctx.beginPath();
+ctx.ellipse(200, 685, 5, 15, 0, 0, Math.PI * 2);
+ctx.ellipse(200, 685, 5, 15, Math.PI / 4, 0, Math.PI * 2);
+ctx.ellipse(200, 685, 5, 15, -Math.PI / 4, 0, Math.PI * 2);
+ctx.ellipse(600, 685, 5, 15, 0, 0, Math.PI * 2);
+ctx.ellipse(600, 685, 5, 15, Math.PI / 4, 0, Math.PI * 2);
+ctx.ellipse(600, 685, 5, 15, -Math.PI / 4, 0, Math.PI * 2);
+ctx.fill();
 
