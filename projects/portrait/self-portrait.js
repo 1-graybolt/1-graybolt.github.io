@@ -46,7 +46,7 @@ ctx.stroke();
 //mouth
 ctx.beginPath();
 ctx.arc(400, 500, 50, 0, Math.PI, false);
-ctx.fillStyle = "black";
+ctx.fillStyle = "#723f02";
 ctx.fill();
 //right ear
 ctx.fillStyle = "#ae834b";
