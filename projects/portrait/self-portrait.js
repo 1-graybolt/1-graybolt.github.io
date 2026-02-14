@@ -9,23 +9,32 @@ ctx.fillStyle = "#ae834b";
 ctx.beginPath();
 ctx.ellipse(400, 400, 150, 200, 0, 0, Math.PI * 2);
 ctx.fill(); 
-// right eyes 
+//right eye= Sclera
 ctx.fillStyle = "White";
 ctx.beginPath();
-ctx.ellipse(320, 350, 20, 20, 0, 0, Math.PI * 2);
+ctx.ellipse(320, 350, 28, 28, 0, 0, Math.PI * 2);
 ctx.fill(); 
-// left eyes 
+//left eye= Sclera
 ctx.beginPath();
-ctx.ellipse(480, 350, 20, 20, 0, 0, Math.PI * 2);
+ctx.ellipse(480, 350, 28, 28, 0, 0, Math.PI * 2);
+ctx.fill();
+//right eye=Iris
+ctx.fillStyle = "#723f02";
+ctx.beginPath();
+ctx.ellipse(320, 350, 15, 15, 0, 0, Math.PI * 2);
+ctx.fill(); 
+//left eyes=Iris 
+ctx.beginPath();
+ctx.ellipse(480, 350, 15, 15, 0, 0, Math.PI * 2);
 ctx.fill();
 //right pupil
 ctx.fillStyle = "black";
 ctx.beginPath();
-ctx.ellipse(320, 350, 10, 10, 0, 0, Math.PI * 2);
+ctx.ellipse(320, 350, 5, 5, 0, 0, Math.PI * 2);
 ctx.fill();
 //left pupil
 ctx.beginPath();
-ctx.ellipse(480, 350, 10, 10, 0, 0, Math.PI * 2);
+ctx.ellipse(480, 350, 5, 5, 0, 0, Math.PI * 2);
 ctx.fill();
 //nose
 ctx.fillStyle="Black";
@@ -115,14 +124,3 @@ ctx.beginPath();
 ctx.moveTo(400, 670);
 ctx.lineTo(400, 800);
 ctx.stroke();
-//fingers
-ctx.fillStyle = "#ae834b";
-ctx.beginPath();
-ctx.ellipse(200, 685, 5, 15, 0, 0, Math.PI * 2);
-ctx.ellipse(200, 685, 5, 15, Math.PI / 4, 0, Math.PI * 2);
-ctx.ellipse(200, 685, 5, 15, -Math.PI / 4, 0, Math.PI * 2);
-ctx.ellipse(600, 685, 5, 15, 0, 0, Math.PI * 2);
-ctx.ellipse(600, 685, 5, 15, Math.PI / 4, 0, Math.PI * 2);
-ctx.ellipse(600, 685, 5, 15, -Math.PI / 4, 0, Math.PI * 2);
-ctx.fill();
-
