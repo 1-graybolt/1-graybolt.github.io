@@ -75,12 +75,12 @@ ctx.fill();
 ctx.beginPath();
 ctx.ellipse(600, 685, 15, 15, 0, 0, Math.PI * 2);
 ctx.fill();
-// left ear whole
-ctx.fillStyle = "Black";
+// inside left ear circle
+ctx.fillStyle = "#cfa06e";
 ctx.beginPath();
-ctx.ellipse(550, 400, 30, 50, 0, 0, Math.PI * 2);
+ctx.ellipse(550, 400, 15, 30, 0, 0, Math.PI * 2);
 ctx.fill();
-// right ear whole
+// inside right ear circle
 ctx.beginPath();
-ctx.ellipse(250, 400, 30, 50, 0, 0, Math.PI * 2);
+ctx.ellipse(250, 400, 15, 30, 0, 0, Math.PI * 2);
 ctx.fill();
