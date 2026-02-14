@@ -101,20 +101,6 @@ ctx.fillStyle = "yellow";
 ctx.beginPath();
 ctx.arc(700, 100, 50, 0, Math.PI * 2);
 ctx.fill();
-//sun rays
-ctx.strokeStyle = "yellow";
-ctx.lineWidth = 5;
-for (let i = 0; i < 12; i++) {
-    const angle = (i / 12) * (Math.PI * 2);
-    const x1 = 700 + Math.cos(angle) * 50;
-    const y1 = 100 + Math.sin(angle) * 50;
-    const x2 = 700 + Math.cos(angle) * 70;
-    const y2 = 100 + Math.sin(angle) * 70;
-    ctx.beginPath();
-    ctx.moveTo(x1, y1);
-    ctx.lineTo(x2, y2);
-    ctx.stroke();
-}
 //cloud
 ctx.fillStyle = "white";
 ctx.beginPath();
