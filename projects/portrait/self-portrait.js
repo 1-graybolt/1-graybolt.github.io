@@ -59,3 +59,10 @@ ctx.fillStyle = "lightblue";
 ctx.fillRect(200, 670, 120, 30);
 //left arm
 ctx.fillRect(480, 670, 120, 30);
+//hair
+ctx.strokeStyle = "black";
+ctx.lineWidth = 20;
+ctx.beginPath();
+ctx.moveTo(240, 350);
+ctx.quadraticCurveTo(400, 50, 560, 350);
+ctx.stroke();
