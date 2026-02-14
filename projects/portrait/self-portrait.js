@@ -115,3 +115,12 @@ ctx.beginPath();
 ctx.moveTo(400, 670);
 ctx.lineTo(400, 800);
 ctx.stroke();
+//Sclera of right eye
+ctx.fillStyle = "Blue";
+ctx.beginPath();
+ctx.ellipse(320, 350, 20, 20, 0, 0, Math.PI * 2);
+ctx.fill();
+//Sclera of left eye
+ctx.beginPath();
+ctx.ellipse(480, 350, 20, 20, 0, 0, Math.PI * 2);
+ctx.fill();
