@@ -108,3 +108,10 @@ ctx.arc(150, 100, 30, 0, Math.PI * 2);
 ctx.arc(180, 100, 30, 0, Math.PI * 2);
 ctx.arc(165, 80, 30, 0, Math.PI * 2);
 ctx.fill();
+//zipper
+ctx.strokeStyle = "black";
+ctx.lineWidth = 2;
+ctx.beginPath();
+ctx.moveTo(400, 670);
+ctx.lineTo(400, 800);
+ctx.stroke();
