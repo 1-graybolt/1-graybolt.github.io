@@ -5,7 +5,7 @@ const ctx = canvas.getContext("2d");
 ctx.fillStyle = "cyan";
 ctx.fillRect(0,0,800,800)
 //head
-ctx.fillStyle = "tan";
+ctx.fillStyle = "Brown";
 ctx.beginPath();
 ctx.ellipse(400, 400, 150, 200, 0, 0, Math.PI * 2);
 ctx.fill(); 
@@ -40,7 +40,7 @@ ctx.arc(400, 500, 50, 0, Math.PI, false);
 ctx.fillStyle = "black";
 ctx.fill();
 //right ear
-ctx.fillStyle = "tan";
+ctx.fillStyle = "Brown";
 ctx.beginPath();
 ctx.ellipse(250, 400, 30, 50, 0, 0, Math.PI * 2);
 ctx.fill();
@@ -49,7 +49,7 @@ ctx.beginPath();
 ctx.ellipse(550, 400, 30, 50, 0, 0, Math.PI * 2);
 ctx.fill();
 //neck
-ctx.fillStyle = "tan";
+ctx.fillStyle = "Brown";
 ctx.fillRect(365, 590, 70, 80);
 //body
 ctx.fillStyle = "lightblue";
