@@ -54,8 +54,8 @@ ctx.fillRect(365, 590, 70, 80);
 //body
 ctx.fillStyle = "lightblue";
 ctx.fillRect(320, 670, 160, 130);
-// girly hair
-ctx.fillStyle = "brown";
-ctx.beginPath();
-ctx.ellipse(400, 300, 150, 200, 0, 0, Math.PI * 2);
-ctx.fill();
+// right arm
+ctx.fillStyle = "lightblue";
+ctx.fillRect(200, 670, 120, 30);
+//left arm
+ctx.fillRect(480, 670, 120, 30);
