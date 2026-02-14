@@ -115,4 +115,10 @@ for (let i = 0; i < 12; i++) {
     ctx.lineTo(x2, y2);
     ctx.stroke();
 }
-  
+//cloud
+ctx.fillStyle = "white";
+ctx.beginPath();
+ctx.arc(150, 100, 30, 0, Math.PI * 2);
+ctx.arc(180, 100, 30, 0, Math.PI * 2);
+ctx.arc(165, 80, 30, 0, Math.PI * 2);
+ctx.fill();
