@@ -66,3 +66,12 @@ ctx.beginPath();
 ctx.moveTo(240, 350);
 ctx.quadraticCurveTo(400, 50, 560, 350);
 ctx.stroke();
+//right hand
+ctx.fillStyle = "#ae834b";
+ctx.beginPath();
+ctx.ellipse(200, 685, 15, 15, 0, 0, Math.PI * 2);
+ctx.fill();
+//left hand
+ctx.beginPath();
+ctx.ellipse(600, 685, 15, 15, 0, 0, Math.PI * 2);
+ctx.fill();
