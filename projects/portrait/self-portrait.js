@@ -39,3 +39,18 @@ ctx.beginPath();
 ctx.arc(400, 500, 50, 0, Math.PI, false);
 ctx.fillStyle = "black";
 ctx.fill();
+//right ear
+ctx.fillStyle = "tan";
+ctx.beginPath();
+ctx.ellipse(250, 400, 30, 50, 0, 0, Math.PI * 2);
+ctx.fill();
+//left ear
+ctx.beginPath();
+ctx.ellipse(550, 400, 30, 50, 0, 0, Math.PI * 2);
+ctx.fill();
+//neck
+ctx.fillStyle = "tan";
+ctx.fillRect(365, 590, 70, 80);
+//body
+ctx.fillStyle = "lightblue";
+ctx.fillRect(320, 670, 160, 130);
