@@ -96,7 +96,4 @@ ctx.beginPath();
 ctx.moveTo(460, 320);
 ctx.lineTo(500, 320);
 ctx.stroke();
-//teeth
-ctx.fillStyle = "white";
-ctx.fillRect(370, 480, 20, 10);
-ctx.fillRect(410, 480, 20, 10);  
+  
