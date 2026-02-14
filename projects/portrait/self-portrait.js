@@ -97,13 +97,13 @@ ctx.fill();
 ctx.strokeStyle = "black";
 ctx.lineWidth = 5;
 ctx.beginPath();
-ctx.moveTo(300, 318);
-ctx.lineTo(340, 318);
+ctx.moveTo(300, 310);
+ctx.lineTo(340, 310);
 ctx.stroke();
 //left eyebrow
 ctx.beginPath();
-ctx.moveTo(460, 318);
-ctx.lineTo(500, 318);
+ctx.moveTo(460, 310);
+ctx.lineTo(500, 310);
 ctx.stroke();
 //sun
 ctx.fillStyle = "yellow";
