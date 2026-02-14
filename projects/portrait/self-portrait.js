@@ -75,24 +75,4 @@ ctx.fill();
 ctx.beginPath();
 ctx.ellipse(600, 685, 15, 15, 0, 0, Math.PI * 2);
 ctx.fill();
-// inside left ear circle
-ctx.fillStyle = "#cfa06e";
-ctx.beginPath();
-ctx.ellipse(550, 400, 15, 30, 0, 0, Math.PI * 2);
-ctx.fill();
-// inside right ear circle
-ctx.beginPath();
-ctx.ellipse(250, 400, 15, 30, 0, 0, Math.PI * 2);
-ctx.fill();
-// right eyebrow
-ctx.strokeStyle = "black";
-ctx.lineWidth = 5;
-ctx.beginPath();
-ctx.moveTo(300, 320);
-ctx.lineTo(340, 320);
-ctx.stroke();
-//left eyebrow
-ctx.beginPath();
-ctx.moveTo(460, 320);
-ctx.lineTo(500, 320);
-ctx.stroke();
+
