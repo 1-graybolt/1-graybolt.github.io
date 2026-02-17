@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Canvas Functions</title>
+    <script src="../js/validate.js"></script>
+</head>
+<body>
+<h1>Canvas Functions</h1>
+<canvas id="canvas" width="800" height="800" style="border:1px solid black;">
+</canvas>
+<script>
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+
+    ctx. fillRect(100,100,100,100); //x, y, width, height
+
+    //wouldn't it be nice if there were fillRectWithColor
+// it would be just like fillRect, but an extra parameter for color
+// Do THAT
+function fillRectWithcolor(x,y,height,color){ ctx.fillStyle=color;
+ctx.fillRect(x,y,width,height);
+}
+fillRectWithColor(0,0,800,800,"blue");
+fillRectWithColor(600,600,100,100,"AOC573");
+// lets make fillcircleWithColor
+// DO THAT!
+function fillCircleWithColor(x,y,radius,color){
+    ctx.fillStyle=color;
+    ctx.beginPath();
+    ctx.arc(x,y,radius,0,2*Math.PI);
+    ctx.fill();
+}
+fillCircleWithColor(50,50,50,"green");  
+fillCircleWithColor(750,750,750,"lemonchiffon");
+
+function drawSnowman(x,y){
+    fillCircleWithColor(x,y-50,20,"white");// head
+    fillCircleWithColor(x,y,50,"white");// abdomen
+    fillCircleWithColor(x,y+110,75,"white");// bottom
+}
+drawSnowman(400,400);
+drawSnowman(550,400);
+    </script>
+</body>
+</html>
