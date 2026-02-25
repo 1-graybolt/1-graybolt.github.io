@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Canvas - with functions!</title>
+	</head>
+	<body>
+		<h1>Canvas - with functions!</h1>
+		<canvas width=800 height=800 id="myCanvas">
+		</canvas>
+		<script>
+const canvas=document.getElementById("myCanvas");
+const ctx=canvas.getContext("2d");
+
+ctx.fillRect(100,100,100,100);
+function functiondrawscircles(x,y,r,color){
+ctx.fillStyle=color;
+    ctx.beginPath();
+    ctx.arc(x,y,r,0,2*Math.PI);
+    ctx.fill();
+}
+functiondrawscircles(50,50,25,"lightGreen");
+functiondrawscircles(100,50,25,"cyan");
+        </script>
+    </body>
+</html>
