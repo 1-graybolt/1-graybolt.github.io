@@ -15,7 +15,6 @@
             height="800">
         </canvas>
         <script>
-            alert("I hope you wait for the PCs to finish the race");
             const canvas=document.getElementById("myCanvas");
             const ctx=canvas.getContext("2d");
             let x=1;
@@ -44,47 +43,52 @@
                        //Draw
                        ctx.fillStyle="green";
                        ctx.fillRect(x,100,50,50);
-                        // Green car wheels
+                        // Green PC wheels
                         ctx.fillStyle="black";
                        ctx.fillRect(x+10,150,10,10);
                        ctx.fillRect(x+30,150,10,10);
-                        //tail
+                        //Green PC tail
                           ctx.fillStyle="cyan";
                           ctx.fillRect(x-10,110,10,30);
-                        //cat face
+                        //Green PC face
                           ctx.fillStyle="white";
                           ctx.fillRect(x+10,110,30,30);
-                          //eyes
+                          //Green PC eyes
                           ctx.fillStyle="black";
                           ctx.fillRect(x+15,120,5,5);
                           ctx.fillRect(x+30,120,5,5);
-                          //mouth
+                          //Green PC mouth
                           ctx.fillStyle="pink";
                           ctx.fillRect(x+20,135,10,5);
 
                        ctx.fillStyle="red";
                        ctx.fillRect(x2,300,50,50)
-                        // Red car wheels
+                        // Red PC legs
                             ctx.fillStyle="black";
                           ctx.fillRect(x2+10,350,10,10);
                             ctx.fillRect(x2+30,350,10,10);
-                         //tail
+                         // Red PC tail 
                             ctx.fillStyle="orange";
                           ctx.fillRect(x2-10,310,10,30);
-                            //cat face
+                            //Red PC face
                           ctx.fillStyle="white";
                           ctx.fillRect(x2+10,310,30,30);
-                          //eyes
+                          //Red PC eyes 
                           ctx.fillStyle="black";
                           ctx.fillRect(x2+15,320,5,5);
                           ctx.fillRect(x2+30,320,5,5);
-                          //mouth
+                          //Red PC mouth
                           ctx.fillStyle="pink";
                           ctx.fillRect(x2+20,335,10,5);
-                        if (x > 800 && x2 > 800) {
+                        if (x2 > 800) {
                      // stickmen Head 
                     ctx.beginPath();
                     ctx.arc(400, 380, 20, 0, Math.PI * 2); 
+                    ctx.stroke();
+
+                    // stickmen frowning mouth
+                    ctx.beginPath();
+                    ctx.arc(400, 390, 10, Math.PI, 0);
                     ctx.stroke();
 
                     // stickmen Eyes 
