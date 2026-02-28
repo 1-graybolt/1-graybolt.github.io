@@ -9,11 +9,13 @@
         </style>
     </head>
     <body>
+        <h1>Welcome to the PC race! I hope you bet on the right car!</h1>
         <canvas id="myCanvas"
             width="800"
             height="800">
         </canvas>
         <script>
+            alert("I hope you wait for the PCs to finish the race");
             const canvas=document.getElementById("myCanvas");
             const ctx=canvas.getContext("2d");
             let x=1;
@@ -76,10 +78,51 @@
                           //mouth
                           ctx.fillStyle="pink";
                           ctx.fillRect(x2+20,335,10,5);
+                        if (x > 800 && x2 > 800) {
+                     // stickmen Head 
+                    ctx.beginPath();
+                    ctx.arc(400, 380, 20, 0, Math.PI * 2); 
+                    ctx.stroke();
+
+                    // stickmen Eyes 
+                    ctx.fillStyle = "black";
+                    ctx.fillRect(392, 375, 4, 4); 
+                    ctx.fillRect(404, 375, 4, 4); 
+
+                    // stickmen Body
+                    ctx.beginPath();
+                    ctx.moveTo(400, 400);
+                    ctx.lineTo(400, 470);
+                    ctx.stroke();
+
+                    // Stickmen Arms 
+                    ctx.beginPath();
+                    ctx.moveTo(370, 430); 
+                    ctx.lineTo(400, 410); 
+                    ctx.lineTo(430, 430); 
+                    ctx.stroke();
+
+                    // Stickmen Legs 
+                    ctx.beginPath();
+                    ctx.moveTo(380, 510); 
+                    ctx.lineTo(400, 470);
+                    ctx.lineTo(420, 510); 
+                    ctx.stroke();
+                    
+                    // Thinking bubble
+                    ctx.fillStyle="lightgrey";
+                    ctx.fillRect(430,300,260,50);
+                    
+                    // Text
+                    ctx.fillStyle="black";
+                    ctx.font = "20px Arial";
+                    ctx.fillText("Oh man I lost all my money!", 440, 335);
+                }
                        
                 requestAnimationFrame(animate); 
             }
             animate();
+            
         </script>
     </body>
 </html>
