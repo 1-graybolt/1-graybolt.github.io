@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Animation</title>
+        <style>
+            canvas {
+                border:1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="myCanvas"
+            width="800"
+            height="800">
+        </canvas>
+        <script>
+            const canvas=document.getElementById("myCanvas");
+            const ctx=canvas.getContext("2d");
+            let x=1;
+            let x2=1;
+            let speed =5;
+            let speed2 =6;
+            let time =0;
+            function animate() {
+                time= time+1;
+                x=x+speed; // = is "assign"
+                       // not equality
+                x2=x2+speed2;
+
+                if(time < 150) {
+                    //move red
+                }
+                if (time >160){
+                    //move green
+                    x2= x2 +speed2;
+                }
+                      //clear                
+                       ctx.clearRect(0,0,800,800);
+                       //Draw
+                       ctx.fillStyle="green";
+                       ctx.fillRect(x,100,50,50);
+                        // Green car wheels
+                        ctx.fillStyle="black";
+                       ctx.fillRect(x+10,150,10,10);
+                       ctx.fillRect(x+30,150,10,10);
+                        //tail
+                          ctx.fillStyle="cyan";
+                          ctx.fillRect(x-10,110,10,30);
+                        //cat face
+                          ctx.fillStyle="white";
+                          ctx.fillRect(x+10,110,30,30);
+                          //eyes
+                          ctx.fillStyle="black";
+                          ctx.fillRect(x+15,120,5,5);
+                          ctx.fillRect(x+30,120,5,5);
+                          //mouth
+                          ctx.fillStyle="pink";
+                          ctx.fillRect(x+20,135,10,5);
+
+                       ctx.fillStyle="red";
+                       ctx.fillRect(x2,300,50,50)
+                        // Red car wheels
+                            ctx.fillStyle="black";
+                          ctx.fillRect(x2+10,350,10,10);
+                            ctx.fillRect(x2+30,350,10,10);
+                         //tail
+                            ctx.fillStyle="orange";
+                          ctx.fillRect(x2-10,310,10,30);
+                            //cat face
+                          ctx.fillStyle="white";
+                          ctx.fillRect(x2+10,310,30,30);
+                          //eyes
+                          ctx.fillStyle="black";
+                          ctx.fillRect(x2+15,320,5,5);
+                          ctx.fillRect(x2+30,320,5,5);
+                          //mouth
+                          ctx.fillStyle="pink";
+                          ctx.fillRect(x2+20,335,10,5);
+                       
+                requestAnimationFrame(animate); 
+            }
+            animate();
+        </script>
+    </body>
+</html>
