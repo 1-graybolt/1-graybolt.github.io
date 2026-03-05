@@ -35,96 +35,96 @@
                     //move green
                     x2= x2 +speed2;
                 }
-                      //clear                
-                       ctx.clearRect(0,0,800,800);
-                       //background
-                       ctx.fillStyle="lightblue";
-                       ctx.fillRect(0,0,800,800);
-                       //Draw
-                       ctx.fillStyle="green";
-                       ctx.fillRect(x,100,50,50);
-                        // Green PC wheels
-                        ctx.fillStyle="black";
-                       ctx.fillRect(x+10,150,10,10);
-                       ctx.fillRect(x+30,150,10,10);
-                        //Green PC tail
-                          ctx.fillStyle="cyan";
-                          ctx.fillRect(x-10,110,10,30);
-                        //Green PC face
-                          ctx.fillStyle="white";
-                          ctx.fillRect(x+10,110,30,30);
-                          //Green PC eyes
-                          ctx.fillStyle="black";
-                          ctx.fillRect(x+15,120,5,5);
-                          ctx.fillRect(x+30,120,5,5);
-                          //Green PC mouth
-                          ctx.fillStyle="pink";
-                          ctx.fillRect(x+20,135,10,5);
+             //clear                
+             ctx.clearRect(0,0,800,800);
+             //background
+             ctx.fillStyle="lightblue";
+             ctx.fillRect(0,0,800,800);
+             //Draw
+             ctx.fillStyle="green";
+             ctx.fillRect(x,100,50,50);
+             // Green PC wheels
+             ctx.fillStyle="black";
+             ctx.fillRect(x+10,150,10,10);
+             ctx.fillRect(x+30,150,10,10);
+             //Green PC tail
+             ctx.fillStyle="cyan";
+             ctx.fillRect(x-10,110,10,30);
+             //Green PC face
+             ctx.fillStyle="white";
+             ctx.fillRect(x+10,110,30,30);
+             //Green PC eyes
+             ctx.fillStyle="black";
+             ctx.fillRect(x+15,120,5,5);
+             ctx.fillRect(x+30,120,5,5);
+             //Green PC mouth
+             ctx.fillStyle="pink";
+             ctx.fillRect(x+20,135,10,5);
+             ctx.fillStyle="red";
+             ctx.fillRect(x2,300,50,50)
+             // Red PC legs
+             ctx.fillStyle="black";
+             ctx.fillRect(x2+10,350,10,10);
+             ctx.fillRect(x2+30,350,10,10);
+             // Red PC tail 
+             ctx.fillStyle="orange";
+             ctx.fillRect(x2-10,310,10,30);
+             //Red PC face
+             ctx.fillStyle="white";
+             ctx.fillRect(x2+10,310,30,30);
+             //Red PC eyes 
+             ctx.fillStyle="black";
+             ctx.fillRect(x2+15,320,5,5);
+             ctx.fillRect(x2+30,320,5,5);
+             //Red PC mouth
+             ctx.fillStyle="pink";
+             ctx.fillRect(x2+20,335,10,5);
+             
+             if (x2 > 800) {
+             // stickmen Head 
+             ctx.beginPath();
+             ctx.arc(400, 380, 20, 0, Math.PI * 2); 
+             ctx.stroke();
+             
+             // stickmen frowning mouth
+             ctx.beginPath();
+             ctx.arc(400, 390, 10, Math.PI, 0);
+             ctx.stroke();
 
-                       ctx.fillStyle="red";
-                       ctx.fillRect(x2,300,50,50)
-                        // Red PC legs
-                            ctx.fillStyle="black";
-                          ctx.fillRect(x2+10,350,10,10);
-                            ctx.fillRect(x2+30,350,10,10);
-                         // Red PC tail 
-                            ctx.fillStyle="orange";
-                          ctx.fillRect(x2-10,310,10,30);
-                            //Red PC face
-                          ctx.fillStyle="white";
-                          ctx.fillRect(x2+10,310,30,30);
-                          //Red PC eyes 
-                          ctx.fillStyle="black";
-                          ctx.fillRect(x2+15,320,5,5);
-                          ctx.fillRect(x2+30,320,5,5);
-                          //Red PC mouth
-                          ctx.fillStyle="pink";
-                          ctx.fillRect(x2+20,335,10,5);
-                        if (x2 > 800) {
-                     // stickmen Head 
-                    ctx.beginPath();
-                    ctx.arc(400, 380, 20, 0, Math.PI * 2); 
+             // stickmen Eyes 
+             ctx.fillStyle = "black";
+             ctx.fillRect(392, 375, 4, 4); 
+             ctx.fillRect(404, 375, 4, 4); 
+
+             // stickmen Body
+             ctx.beginPath();
+             ctx.moveTo(400, 400);
+             ctx.lineTo(400, 470);
                     ctx.stroke();
 
-                    // stickmen frowning mouth
-                    ctx.beginPath();
-                    ctx.arc(400, 390, 10, Math.PI, 0);
-                    ctx.stroke();
+             // Stickmen Arms 
+             ctx.beginPath();
+             ctx.moveTo(370, 430); 
+             ctx.lineTo(400, 410); 
+             ctx.lineTo(430, 430); 
+             ctx.stroke();
 
-                    // stickmen Eyes 
-                    ctx.fillStyle = "black";
-                    ctx.fillRect(392, 375, 4, 4); 
-                    ctx.fillRect(404, 375, 4, 4); 
-
-                    // stickmen Body
-                    ctx.beginPath();
-                    ctx.moveTo(400, 400);
-                    ctx.lineTo(400, 470);
-                    ctx.stroke();
-
-                    // Stickmen Arms 
-                    ctx.beginPath();
-                    ctx.moveTo(370, 430); 
-                    ctx.lineTo(400, 410); 
-                    ctx.lineTo(430, 430); 
-                    ctx.stroke();
-
-                    // Stickmen Legs 
-                    ctx.beginPath();
-                    ctx.moveTo(380, 510); 
-                    ctx.lineTo(400, 470);
-                    ctx.lineTo(420, 510); 
-                    ctx.stroke();
+             // Stickmen Legs 
+             ctx.beginPath();
+             ctx.moveTo(380, 510); 
+             ctx.lineTo(400, 470);
+             ctx.lineTo(420, 510); 
+             ctx.stroke();
                     
-                    // Thinking bubble
-                    ctx.fillStyle="lightgrey";
-                    ctx.fillRect(430,300,260,50);
+             // Thinking bubble
+             ctx.fillStyle="lightgrey";
+             ctx.fillRect(430,300,260,50);
                     
-                    // Text
-                    ctx.fillStyle="black";
-                    ctx.font = "20px Arial";
-                    ctx.fillText("Oh man I lost all my money!", 440, 335);
-                }
+             // Text
+             ctx.fillStyle="black";
+             ctx.font = "20px Arial";
+             ctx.fillText("Oh man I lost all my money!", 440, 335);
+         }
                        
                 requestAnimationFrame(animate); 
             }
