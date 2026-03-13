@@ -4,9 +4,12 @@ let gameActive = true; //this variable is required.
 //Declare your other global variables here
 let nokey = false;
 let havekey = false;
-let day = 0;
 let minutes = 0;
 
+function check_time() {
+    clear();
+    minutes++;
+}
 //If you need, add any "helper" functions here
 
 
@@ -16,16 +19,19 @@ function locationA() {
     print("\nYou wake up in your bedroom");
     print("this wasn't how you remember going to sleep...");
     print("Bang!")
-    print("every alarm goes off, you only have 15 to evacuate hurry.");
+    print("every alarm goes off, you only have 15 minutes to evacuate hurry.");
     print("\nWhere do you want to go next to escape? Say one of these choices:" +
-        "\n\tlocationB");
+        "\n\tHallway");
     
     function processInput(input){
-        if (input.toLowerCase() === "locationb") {
-            locationB();
+        if (input.toLowerCase() === "Hallway") {
+            Hallway();
+            print("Everything is super dark you turn on the lights and realized there is 4 ways to go.")
+            print("\nWhere do you want to go next to escape? Say one of these choices:" +
+        "\n\tbedroom" + "\n\tkitchen" + "\n\tlivingroom" + "\n\trestroom" )
         } else {
             stayHere();
-            waitThenCall(locationA);
+            waitThenCall(bedroom);
         }
     }
     waitForInput(processInput);
@@ -35,11 +41,11 @@ function locationB() {
     clear();
     print("\nYou are in location B!");
     print("\nWhere do you want to go next? Say one of these choices:" +
-        "\n\tlocationA");
+        "\n\tbedroom");
     
     function processInput(input){
         if (input.toLowerCase() === "locationa") {
-            locationA();
+            bedroom();
         } else {
             stayHere();
             waitThenCall(locationB);
@@ -55,7 +61,7 @@ function start(){
     print("Welcome to my game! Press any key to start");
 
     function processInput(input){
-            locationA();
+            bedroom();
     }
     waitForInput(processInput);
 }
