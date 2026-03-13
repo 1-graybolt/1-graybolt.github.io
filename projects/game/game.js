@@ -2,7 +2,10 @@ let gameActive = true; //this variable is required.
                        //to stop the game, set it to false.
 
 //Declare your other global variables here
-
+let nokey = false;
+let havekey = false;
+let day = 0;
+let minutes = 0;
 
 //If you need, add any "helper" functions here
 
@@ -10,8 +13,11 @@ let gameActive = true; //this variable is required.
 //Make one function for each location
 function locationA() {
     clear();
-    print("\nYou are in location A!");
-    print("\nWhere do you want to go next? Say one of these choices:" +
+    print("\nYou wake up in your bedroom");
+    print("this wasn't how you remember going to sleep...");
+    print("Bang!")
+    print("every alarm goes off, you only have 15 to evacuate hurry.");
+    print("\nWhere do you want to go next to escape? Say one of these choices:" +
         "\n\tlocationB");
     
     function processInput(input){
