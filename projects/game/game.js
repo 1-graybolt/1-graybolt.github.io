@@ -9,6 +9,11 @@ let minutes = 0;
 function check_time() {
     clear();
     minutes++;
+    if (minutes >= 15) {
+        clear();
+        print("Time is up! you died not knowing the truth!");
+        gameActive = false;
+    }
 }
 //If you need, add any "helper" functions here
 
@@ -65,3 +70,4 @@ function start(){
     }
     waitForInput(processInput);
 }
+start();
