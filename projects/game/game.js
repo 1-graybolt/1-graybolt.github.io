@@ -26,7 +26,7 @@ function Bedroom() {
     print("\nBang!");
     print("\nevery alarm goes off, you only have 15 minutes to evacuate hurry.");
     print("\nWhere do you want to go next to escape? Say one of these choices:" +
-        "\n\tHallway");
+        "\n\tHallway" + "\n\tkitchen" + "\n\tlivingroom" + "\n\trestroom" );
     
     function processInput(input){
         if (input.toLowerCase() === "Hallway") {
