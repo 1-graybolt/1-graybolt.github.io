@@ -16,7 +16,7 @@ graph TD;
     1bedroom<-->2hallway;
     1bedroom<-->restroom;
     Hallway<-->restroom;
-    Deathroom<-->restroom;
+    Deathroom-->restroom;
 ```
 
 The player starts on the in their bedroom, and then is directed into the hallway. 
@@ -24,11 +24,10 @@ They can explore, but must eventually make their way to locked door.
 
 ## Story
 
-When the user gets to Door, they learn that the key is in the in the restroom they must go to the restroom and get the key and then go back to the Door to escape.
+When the user gets to where the Door is, they learn that the key is in the restroom they must go to the restroom and get the key and then go back to the Door to escape.
 
-The game starts 15 minutes before the morning class bell, and each
+The player has 15 minutes before they lose the game, and each
 move costs 1 minute. So this journey must be completed in 15 moves.
-Some moves (like reading a book in the library) cost extra time.
 
 ## Global Variables
 
@@ -43,8 +42,3 @@ read note which states to get the key and give a hint like "its where everyone g
 I also have numeric variables called `day` and `minute` which keep track of 
 time. `minute` starts at 0 and counts up
 with each move.
-
-I have a little HUD map, and use a bunch of 
-boolean variables to control which
-rooms the player has discovered. A map is only displayed after the user
-visits it.
