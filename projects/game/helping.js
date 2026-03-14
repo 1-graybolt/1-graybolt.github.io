@@ -1,44 +1,57 @@
-let gameActive = true;
+let gameActive = true; //this variable is required. 
+                       //to stop the game, set it to false.
+
+//Declare your other global variables here
+let nokey = false;
 let havekey = false;
 let minutes = 0;
 
-function check_time() {
-    minutes++;
-    if (minutes >= 15) {
-        clear();
-        print("Time is up! You died not knowing the truth!");
-        gameActive = false;
-    }
-}
+//If you need, add any "helper" functions here
 
-function start() {
+
+//Make one function for each location
+function Bedroom() {
     clear();
-    print("Welcome to my game!");
-    print("Type 'start' and press Enter to begin.");
-
-    function processInput(input) {
-        if (input.toLowerCase() === "start") {
-            bedroom();
+    print("\nYou are in the bedroom!");
+    print("\nWhere do you want to go next? Say one of these choices:" +
+        "\n\tlocationB");
+    
+    function processInput(input){
+        if (input.toLowerCase() === "locationb") {
+            locationB();
         } else {
-            start();
+            stayHere();
+            waitThenCall(Bedroom);
         }
     }
     waitForInput(processInput);
 }
 
-function bedroom() {
+function locationB() {
     clear();
-    print("\nYou wake up in your bedroom.");
-    print("Bang! The alarm goes off. You have 15 minutes to escape!");
-    print("\nWhere do you want to go? Type 'hallway'");
+    print("\nYou are in location B!");
+    print("\nWhere do you want to go next? Say one of these choices:" +
+        "\n\tlocationA");
     
-    function processInput(input) {
-        if (input.toLowerCase() === "hallway") {
-            hallway();
+    function processInput(input){
+        if (input.toLowerCase() === "locationa") {
+            locationA();
         } else {
-            print("Invalid command! Try again.");
-            waitThenCall(bedroom, 1000);
+            stayHere();
+            waitThenCall(locationB);
         }
+    }
+    waitForInput(processInput);
+}
+
+//finally, make sure you customize this to tell it what should happen at the
+//very start. For this simple example, any input will bring you
+//to locationA
+function start(){
+    print("Welcome to my game! Press any key to start");
+
+    function processInput(input){
+            Bedroom();
     }
     waitForInput(processInput);
 }
