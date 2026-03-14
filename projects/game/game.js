@@ -20,49 +20,39 @@ function check_time() {
 //Make one function for each location
 function Bedroom() {
     clear();
-    print("\nYou wake up in your bedroom");
+    print("\nYou wake up in your Bedroom");
     print("\nthis wasn't where you remember going to sleep...");
     print("\nBang!");
     print("\nevery alarm goes off, you only have 15 minutes to evacuate hurry.");
     print("\nWhere do you want to go next to escape? Say one of these choices:" +
         "\n\tHallway" + "\n\tkitchen" + "\n\tlivingroom" + "\n\trestroom" );
     
-    function processInput(input){
-        if (input.toLowerCase() === "Hallway") {
-            Hallway();
-        } else {
-            stayHere();
-            waitThenCall(Bedroom);
-        }
+function processInput(input){
+    if (input.toLowerCase() === "hallway") {
+        Hallway();
+    } else if (input.toLowerCase() === "bedroom") {
+        Bedroom();
+    } else if (input.toLowerCase() === "kitchen") {
+        kitchen();
+    } else if (input.toLowerCase() === "livingroom") {
+        livingroom();
+    } else {
+        stayHere();
+        waitThenCall(Bedroom);
     }
-    waitForInput(processInput);
-  function processInput(input){
-        if (input.toLowerCase() === "bedroom") {
-            bedroom();
-        } 
-	    else if(input.toLowerCase() === "kitchen"){
-		kitchen();
-	}
-	    else if (input.toLowerCase() === "livingroom"){
-		livingroom();
-	}
-	    else {
-            stayHere();
-            waitThenCall(Hallway);
-        }
-    }
-    waitForInput(processInput);
+}
+waitForInput(processInput);
 }
 
 function Hallway() {
     clear();
     print("\nEverything is super dark you turn on the lights and realized there is 4 ways to go.")
             print("\nWhere do you want to go next to escape? Say one of these choices:" +
-        "\n\tbedroom" + "\n\tkitchen" + "\n\tlivingroom" + "\n\trestroom" );
+        "\n\tBedroom" + "\n\tkitchen" + "\n\tlivingroom" + "\n\trestroom" );
     
     function processInput(input){
-        if (input.toLowerCase() === "bedroom") {
-            bedroom();
+        if (input.toLowerCase() === "Bedroom") {
+            Bedroom();
         } else {
             stayHere();
             waitThenCall(Hallway);
@@ -75,11 +65,11 @@ function kitchen() {
     clear();
     print("\nYou are in the kitchen, you smell blood and you decide its best to get out of here.");
     print("\nWhere do you want to go next to escape? Say one of these choices:" +
-        "\n\hallway");
+        "\n\tHallway");
 
     function processInput(input){
         if (input.toLowerCase() === "Hallway") {
-            bedroom();
+            Hallway();
         } else {
             stayHere();
             waitThenCall(kitchen);
