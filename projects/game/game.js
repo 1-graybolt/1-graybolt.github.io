@@ -10,7 +10,7 @@ function check_time() {
     if (!gameActive) return;
 
     minutes++;
-    let timeRemaining = 15 - minutes;
+    let timeRemaining = 16 - minutes;
     clear(); 
     print("Time remaining: " + timeRemaining + " minutes.");
 
@@ -87,6 +87,7 @@ function kitchen() {
 
 function livingroom() {
     clear();
+    check_time();
     print("\nYou are in the living room, you see that all the tables are flipped and the whole place is a mess, you decide to get out of here.");
     print("\nWhere do you want to go next to escape? Say one of these choices:" +
         "\n\thallway"+ "\n\tsecondhallway");
@@ -107,6 +108,7 @@ function livingroom() {
 
 function secondhallway() {
     clear();
+    check_time();
     print("\nYou are in the second hallway. you feel a chill run down your spine because this wasn't where you remember going to sleep...");
     print("\nWhere do you want to go next to escape? Say one of these choices:" +
         "\n\tlivingroom" + "\n\tsecondbedroom" + "\n\tdoor");
@@ -126,6 +128,7 @@ function secondhallway() {
 }
 function door() {
     clear();
+    check_time();
     print("\nYou are at the door, you try to open it but its locked, you look around and see a note on the floor, you pick it up and read it, it says 'the key is where very person goes not the bedroom somewhere else'.");
     print("\nWhere do you want to go next to escape? Say one of these choices:" +
         "\n\tsecondhallway" );
@@ -147,6 +150,7 @@ function door() {
 }
 function secondbedroom() {
     clear();
+    check_time();
     print("\nYou are in the 2nd bedroom, the place is dark you see a flash light you pick it up  and turned it on");
     print("\nWhere do you want to go next to escape? Say one of these choices:" + "\n\trestroom" + "\n\tsecondhallway");
     function processInput(input){
@@ -164,6 +168,7 @@ function secondbedroom() {
 
 function restroom() {
     clear();
+    check_time();
     print("\nYou are in the restroom, you see a key on the floor you pick it up now you just have to go back the door to escape");
     nokey = false;
     havekey = true;
@@ -182,6 +187,7 @@ function restroom() {
 }
 function theend() {
     clear();
+    check_time();
     print("you walked into the room and you see a black monster the monster eats you and you died, you should have went back to the door and escape. To restart the game refresh the page.");
     gameActive = false;
 }
