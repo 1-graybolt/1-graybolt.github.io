@@ -2,7 +2,7 @@ let gameActive = true; //this variable is required.
                        //to stop the game, set it to false.
 
 //Declare your other global variables here
-let nokey = True;
+let nokey = true;
 let havekey = false;
 let minutes = 0;
 
@@ -20,7 +20,7 @@ function check_time() {
 //Make one function for each location
 function bedroom() {
     clear();
-    print("\nYou wake up in your Bbedroom");
+    print("\nYou wake up in your bedroom");
     print("\nthis wasn't where you remember going to sleep...");
     print("\nBang!");
     print("\nevery alarm goes off, you only have 15 minutes to evacuate hurry.");
