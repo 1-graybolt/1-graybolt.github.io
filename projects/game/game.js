@@ -62,11 +62,18 @@ function locationB() {
 //finally, make sure you customize this to tell it what should happen at the
 //very start. For this simple example, any input will bring you
 //to locationA
-function start(){
-    print("Welcome to my game! Press any key to start");
+function start() {
+    clear();
+    print("Welcome to my game!");
+    print("Type 'start' and press Enter to begin.");
 
-    function processInput(input){
+    function processInput(input) {
+        if (input.toLowerCase() === "start") {
             bedroom();
+        } else {
+            print("You must type 'start' to begin!");
+            waitThenCall(start, 1000);
+        }
     }
     waitForInput(processInput);
 }
