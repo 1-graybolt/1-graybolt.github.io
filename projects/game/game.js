@@ -19,7 +19,7 @@ function check_time() {
 
 
 //Make one function for each location
-function locationA() {
+function Bedroom() {
     clear();
     print("\nYou wake up in your bedroom");
     print("this wasn't how you remember going to sleep...");
