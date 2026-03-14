@@ -42,12 +42,3 @@ function bedroom() {
     }
     waitForInput(processInput);
 }
-
-function start(){
-    print("Welcome to my game! Press any key to start");
-
-    function processInput(input){
-            locationA();
-    }
-    waitForInput(processInput);
-}
