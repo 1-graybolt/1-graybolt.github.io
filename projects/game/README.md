@@ -24,7 +24,7 @@ They can explore, but must eventually make their way to locked door.
 
 ## Story
 
-When the user gets to where the Door is, they learn that the key is in the restroom they must go to the restroom and get the key and then go back to the Door to escape.
+When the user gets to where the Door is, they learn that the key is in the restroom they must go to the restroom and get the key and then go back to the Door to escape. They can also speed run the game by going to the restroom first before heading to the door.
 
 The player has 15 minutes before they lose the game, and each
 move costs 1 minute. So this journey must be completed in 15 moves.
@@ -37,7 +37,7 @@ booleans that track progress in the
 story. Depending on these two variables,
 some rooms will display different things. For example, if you walk into the
 door without the key, it will prompt you to
-read note which states to get the key and give a hint like "its where everyone goes everyday privately". If you walk in with the key, it will tell you the game has been won and reveal what actually happened.
+read note which states to get the key and give a hint. If you walk in with the key, it will tell you the game has been won and reveal what actually happened.
 
 I also have numeric variables called `minute` which keep track of 
 time. `minute` starts at 0 and counts up
