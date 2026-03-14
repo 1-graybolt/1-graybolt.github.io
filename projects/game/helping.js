@@ -43,29 +43,11 @@ function bedroom() {
     waitForInput(processInput);
 }
 
-function hallway() {
-    clear();
-    check_time(); // Time ticks when you enter the hallway
-    print("Everything is super dark. You turn on the lights.");
-    print("You see 4 ways to go: kitchen, livingroom, restroom, or bedroom.");
-    
-    function processInput(input) {
-        let choice = input.toLowerCase();
-        if (choice === "bedroom") {
-            bedroom();
-        } else if (choice === "kitchen") {
-            print("You went to the kitchen."); // Add kitchen logic later
-        } else if (choice === "livingroom") {
-            print("You went to the livingroom.");
-        } else if (choice === "restroom") {
-            print("You went to the restroom.");
-        } else {
-            print("That's not a valid room!");
-            waitThenCall(hallway, 1000);
-        }
+function start(){
+    print("Welcome to my game! Press any key to start");
+
+    function processInput(input){
+            locationA();
     }
     waitForInput(processInput);
 }
-
-// Start the game
-start();
