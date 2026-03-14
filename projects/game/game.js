@@ -20,7 +20,6 @@ function check_time() {
 //Make one function for each location
 function Bedroom() {
     clear();
-    check_time();
     print("\nYou wake up in your Bedroom");
     print("\nthis wasn't where you remember going to sleep...");
     print("\nBang!");
@@ -47,7 +46,6 @@ waitForInput(processInput);
 
 function hallway() {
     clear();
-    check_time();
     print("\nEverything is super dark you turn on the lights and realized there is 4 ways to go.")
             print("\nWhere do you want to go next to escape? Say one of these choices:" +
         "\n\tBedroom" + "\n\tkitchen" + "\n\tlivingroom" + "\n\trestroom" );
