@@ -7,12 +7,13 @@ let havekey = false;
 let minutes = 0;
 
 function check_time() {
-    clear();
+    if (!gameActive) return;
+
     minutes++;
+
     if (minutes >= 15) {
-        clear();
-        print("Time is up! you died not knowing the truth!");
         gameActive = false;
+        print("Time is up! you died not knowing the truth!");
     }
 }
 //If you need, add any "helper" functions here
@@ -20,6 +21,7 @@ function check_time() {
 //Make one function for each location
 function bedroom() {
     clear();
+    check_time();
     print("\nYou wake up in your bedroom");
     print("\nthis wasn't where you remember going to sleep...");
     print("\nBang!");
