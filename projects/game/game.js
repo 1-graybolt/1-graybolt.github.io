@@ -10,6 +10,9 @@ function check_time() {
     if (!gameActive) return;
 
     minutes++;
+    let timeRemaining = 15 - minutes;
+    clear(); 
+    print("Time remaining: " + timeRemaining + " minutes.");
 
     if (minutes >= 15) {
         gameActive = false;
@@ -42,6 +45,7 @@ waitForInput(processInput);
 
 function hallway() {
     clear();
+    check_time();
     print("\nEverything is super dark you turn on the lights and realized there is 4 ways to go.")
             print("\nWhere do you want to go next to escape? Say one of these choices:" +
         "\n\tbedroom" + "\n\tkitchen" + "\n\tlivingroom" + "\n\trestroom" );
