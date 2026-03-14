@@ -17,7 +17,6 @@ function check_time() {
 }
 //If you need, add any "helper" functions here
 
-
 //Make one function for each location
 function Bedroom() {
     clear();
@@ -71,6 +70,24 @@ function Hallway() {
     }
     waitForInput(processInput);
 }
+
+function kitchen() {
+    clear();
+    print("\nYou are in the kitchen, you smell blood and you decide its best to get out of here.");
+    print("\nWhere do you want to go next to escape? Say one of these choices:" +
+        "\n\hallway");
+
+    function processInput(input){
+        if (input.toLowerCase() === "Hallway") {
+            bedroom();
+        } else {
+            stayHere();
+            waitThenCall(kitchen);
+        }
+    }
+    waitForInput(processInput);
+}
+
 
 //finally, make sure you customize this to tell it what should happen at the
 //very start. For this simple example, any input will bring you
