@@ -36,7 +36,7 @@ function Bedroom() {
         "\n\tbedroom" + "\n\tkitchen" + "\n\tlivingroom" + "\n\trestroom" )
         } else {
             stayHere();
-            waitThenCall(bedroom);
+            waitThenCall(Bedroom);
         }
     }
     waitForInput(processInput);
