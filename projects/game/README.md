@@ -11,10 +11,10 @@ graph TD;
     bedroom(((bedroom)))<-->Hallway;
     kitchen<-->Hallway;
     livingroom<-->Hallway;
-    livingroom<-->2hallway;
-    Door<-->2hallway;
-    1bedroom<-->2hallway;
-    1bedroom<-->restroom;
+    livingroom<-->secondhallway;
+    Door<-->secondhallway;
+    secondbedroom<-->secondhallway;
+    secondbedroom<-->restroom;
     Hallway<-->restroom;
     Deathroom-->restroom;
 ```
@@ -39,6 +39,6 @@ some rooms will display different things. For example, if you walk into the
 door without the key, it will prompt you to
 read note which states to get the key and give a hint like "its where everyone goes everyday privately". If you walk in with the key, it will tell you the game has been won and reveal what actually happened.
 
-I also have numeric variables called `day` and `minute` which keep track of 
+I also have numeric variables called `minute` which keep track of 
 time. `minute` starts at 0 and counts up
 with each move.
