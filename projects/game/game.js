@@ -56,23 +56,17 @@ function Bedroom() {
 }
 
 function Hallway() {
+    clear();
     print("\nEverything is super dark you turn on the lights and realized there is 4 ways to go.")
             print("\nWhere do you want to go next to escape? Say one of these choices:" +
         "\n\tbedroom" + "\n\tkitchen" + "\n\tlivingroom" + "\n\trestroom" );
-            }
-
-function Hallway() {
-    clear();
-    print("\nYou are in the hallway!");
-    print("\nWhere do you want to go next? Say one of these choices:" +
-        "\n\tbedroom");
     
     function processInput(input){
-        if (input.toLowerCase() === "locationa") {
+        if (input.toLowerCase() === "bedroom") {
             bedroom();
         } else {
             stayHere();
-            waitThenCall(locationB);
+            waitThenCall(Hallway);
         }
     }
     waitForInput(processInput);
