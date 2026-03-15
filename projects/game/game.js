@@ -13,11 +13,12 @@ function check_time() {
 
     if (minutes >= 16) {
         gameActive = false;
+        clear();
         print("Time is up! you died not knowing the truth! click refresh to restart the game.");
     
     }else{
     let timeRemaining = 16 - minutes;
-    clear(); 
+    clear();
     print("The time remaining is " + timeRemaining + " minutes.");
 }
 }
