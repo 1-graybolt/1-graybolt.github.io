@@ -10,17 +10,14 @@ function check_time() {
     if (!gameActive) return;
 
     minutes++;
+    let timeRemaining = 15 - minutes;
+    clear(); 
+    print("Time remaining: " + timeRemaining + " minutes.");
 
-    if (minutes >= 16) {
-        clear();
+    if (minutes >= 15) {
         gameActive = false;
-        print("Time is up! you died not knowing the truth! click refresh to restart the game.");
-    
-    }else{
-    let timeRemaining = 16 - minutes;
-    clear();
-    print("The time remaining is " + timeRemaining + " minutes.");
-}
+        print("Time is up! you died not knowing the truth!");
+    }
 }
 //If you need, add any "helper" functions here
 
