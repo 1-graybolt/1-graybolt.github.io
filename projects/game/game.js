@@ -12,8 +12,8 @@ function check_time() {
     minutes++;
 
     if (minutes >= 16) {
-        gameActive = false;
         clear();
+        gameActive = false;
         print("Time is up! you died not knowing the truth! click refresh to restart the game.");
     
     }else{
