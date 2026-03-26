@@ -9,29 +9,30 @@ for (let x=25; x<725; x+=100){
 }
 
 canvas = document.getElementById("canvas2");
-ctx = canvas.getContext("2d");{
-for (let y = 0; y <= 200; y+=100){ 
-for (let x = 25; x <= y; x+=100) 
-    ctx.fillRect(x,y,50,25);
-}
-}
-
+ctx = canvas.getContext("2d");
 
 //fill in code for canvas2 here
+for(let y = 100; y <= 800; y += 100){
+for(let x = 25; x < 800; x += 100){
+	if(y > x){
+	ctx.fillRect(x, y, 50, 20);
+	}
+}
+}
 
 canvas = document.getElementById("canvas3");
 ctx = canvas.getContext("2d");
-for(let y=0; y<200; y+=100){
-    for(let x=25; x<725; x+=100){
-        ctx.fillRect(x,y,50,25);
-    }
+//fill in code for canvas3 her
+for(let y = 0; y < 800; y += 100){
+for(let x = 0; x < 800; x += 100){
+	if(y != x){
+	ctx.fillRect(x, y, 50, 20);
 }
-
-//fill in code for canvas3 here
+}
+}
 
 canvas = document.getElementById("canvas4");
 ctx = canvas.getContext("2d");
-
 //fill in code for canvas4 here
-canvas = document.getElementById("canvas5");
-ctx = canvas.getContext("2d");
+
+
