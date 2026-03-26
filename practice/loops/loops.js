@@ -9,10 +9,10 @@ for (let x=25; x<725; x+=100){
 }
 
 canvas = document.getElementById("canvas2");
-ctx = canvas.getContext("2d");
-for(let y=0; y<=200;y+=100){
-for(let y=0; y<x; x+100){
-    ctx.fillRect(x,y,50,25)
+ctx = canvas.getContext("2d");{
+for (let y = 0; y <= 200; y+=100){ 
+for (let x = 25; x <= y; x+=100) 
+    ctx.fillRect(x,y,50,25);
 }
 }
 
