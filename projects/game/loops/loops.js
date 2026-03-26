@@ -2,6 +2,11 @@ let canvas = document.getElementById("canvas1");
 let ctx = canvas.getContext("2d");
 
 //fill in code for canvas1 here
+for(let y=0; y<=200; y+=100){
+for (let x=25; x<725; x+=100){
+    ctx.fillRect(x, y, 50, 25);
+}
+}
 
 canvas = document.getElementById("canvas2");
 ctx = canvas.getContext("2d");
