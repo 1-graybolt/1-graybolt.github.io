@@ -14,9 +14,9 @@ ctx = canvas.getContext("2d");
 //fill in code for canvas2 here
 for(let y = 100; y <= 800; y += 100){
 for(let x = 25; x < 800; x += 100){
-	if(y > x){
-	ctx.fillRect(x, y, 50, 20);
-	}
+if(y > x){
+ctx.fillRect(x, y, 50, 20);
+}
 }
 }
 
@@ -26,8 +26,8 @@ ctx = canvas.getContext("2d");
 //fill in code for canvas3 her
 for(let y = 0; y < 800; y += 100){
 for(let x = 0; x < 800; x += 100){
-	if(y != x){
-	ctx.fillRect(x, y, 50, 20);
+if(y != x){
+ctx.fillRect(x, y, 50, 20);
 }
 }
 }
