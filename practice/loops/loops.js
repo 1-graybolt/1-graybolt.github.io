@@ -16,10 +16,16 @@ for (let x = 25; x <= y; x+=100)
 }
 }
 
+
 //fill in code for canvas2 here
 
 canvas = document.getElementById("canvas3");
 ctx = canvas.getContext("2d");
+for(let y=0; y<200; y+=100){
+    for(let x=25; x<725; x+=100){
+        ctx.fillRect(x,y,50,25);
+    }
+}
 
 //fill in code for canvas3 here
 
@@ -27,3 +33,5 @@ canvas = document.getElementById("canvas4");
 ctx = canvas.getContext("2d");
 
 //fill in code for canvas4 here
+canvas = document.getElementById("canvas5");
+ctx = canvas.getContext("2d");
