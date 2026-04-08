@@ -7,7 +7,10 @@ function clickHandler(e){
     junk_max_y = j.y + 12*j.size;
 
     //TODO: write some code here that checks whether
-    //(mouseX, mouseY) is inside j
+    //(mouseX, mouseY) is inside junk
+    if(mouseX>junk_min_x && mouseX<junk_max_x && mouseY>junk_min_y && mouseY<junk_max_y){
+        j.alive = false;
+    }
 
   }
 }
