@@ -1,21 +1,31 @@
 
+:root {
+  --primary: #87CEEB; /* light blue */
+  --text: #04292b; /* dark text for readability */
+  --surface: #ffffff; /* content background */
+  --focus: rgba(135,206,235,0.28);
+}
+
 body {
-  background-color: #c5f0c8;
-  font-family: Tahoma, Helvetica, sans-serif;
-  color: #333;
+  background: var(--primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--text);
   margin: 0;
   padding: 0;
-
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 h1 {
-  background-color: #4A90E2;
-  color: white;
-  padding: 10px;
-
+  font-size: 1.75rem;
+  margin: 0 0 12px 0;
+  color: var(--text);
 }
 
-a:focus { outline: 3px solid #FF6B6B; outline-offset: 2px; }
+a:focus { outline: 3px solid var(--focus); outline-offset: 3px; }
+
+a { color: var(--primary); text-decoration: none; }
+a:hover, a:active { text-decoration: underline; }
 
 a img { display: block; pointer-events: auto; cursor: pointer; }
 
@@ -27,4 +37,41 @@ table { width: 100px; margin: auto; }
 #firstlink { background-color: BlanchedAlmond; }
 #info { background-color: cyan; }
 .checker { background-color: #cee5f5; }
+
+/* Header styles (visually appealing) */
+.site-header { background: var(--primary); color: #fff; box-shadow: none; }
+.site-header .container { width: 100%; max-width: none; margin: 0; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; }
+.brand { font-size: 1.1rem; font-weight: 700; color: #fff; text-decoration: none; letter-spacing: 0.2px; }
+.brand:hover, .brand:focus { opacity: 0.95; }
+.main-nav a { margin-left: 14px; color: #fff; text-decoration: none; padding: 6px 10px; border-radius: 6px; font-weight: 600; transition: background 120ms ease; }
+.main-nav a:hover, .main-nav a:focus { background: rgba(255,255,255,0.12); outline: none; }
+
+@media (max-width: 600px) {
+  .site-header .container { flex-direction: column; gap: 8px; align-items: stretch; padding: 12px 18px; }
+  .main-nav { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+  .main-nav a { margin-left: 0; }
+}
+
+/* Ensure main content and footer remain readable on cyan background */
+/* Readable content container */
+main {
+  max-width: 1100px;
+  margin: 28px auto;
+  background: var(--surface);
+  color: var(--text);
+  padding: 28px;
+  border-radius: 8px;
+}
+main section { background: transparent; padding: 0; border-radius: 0; box-shadow: none; }
+section h1 { color: #032a2a; margin-top: 0; }
+
+footer { max-width: 1100px; margin: 18px auto 40px; padding: 12px 20px; background: var(--surface); color: var(--text); border-radius: 8px; text-align: right; }
+footer p { margin: 0; }
+
+hr { border: 0; height: 1px; background: rgba(3,45,45,0.06); margin: 0; }
+
+/* Small responsive tweaks */
+@media (max-width: 700px) {
+  main { margin: 18px 12px; padding: 18px; }
+}
 
