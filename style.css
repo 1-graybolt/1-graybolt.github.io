@@ -1,8 +1,8 @@
 
 :root {
-  --primary: #87CEEB; /* light blue */
-  --text: #04292b; /* dark text for readability */
-  --surface: #ffffff; /* content background */
+  --primary: #87CEEB; 
+  --text: #04292b; 
+  --surface: #ffffff; 
   --focus: rgba(135,206,235,0.28);
 }
 
@@ -38,7 +38,7 @@ table { width: 100px; margin: auto; }
 #info { background-color: cyan; }
 .checker { background-color: #cee5f5; }
 
-/* Header styles (visually appealing) */
+
 .site-header { background: var(--primary); color: #fff; box-shadow: none; }
 .site-header .container { width: 100%; max-width: none; margin: 0; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; }
 .brand { font-size: 1.1rem; font-weight: 700; color: #fff; text-decoration: none; letter-spacing: 0.2px; }
@@ -52,8 +52,7 @@ table { width: 100px; margin: auto; }
   .main-nav a { margin-left: 0; }
 }
 
-/* Ensure main content and footer remain readable on cyan background */
-/* Readable content container */
+
 main {
   max-width: 1100px;
   margin: 28px auto;
@@ -70,7 +69,7 @@ footer p { margin: 0; }
 
 hr { border: 0; height: 1px; background: rgba(3,45,45,0.06); margin: 0; }
 
-/* Small responsive tweaks */
+
 @media (max-width: 700px) {
   main { margin: 18px 12px; padding: 18px; }
 }
