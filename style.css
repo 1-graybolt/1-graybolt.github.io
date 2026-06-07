@@ -89,7 +89,8 @@ section h1 { color: #032a2a; margin-top: 0; }
 }
 .image-row img {
   width: 100%;
-  height: auto;
+  height: 320px;
+  object-fit: contain;
   display: block;
 }
 .image-row figcaption {
