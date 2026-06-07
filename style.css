@@ -82,6 +82,7 @@ section h1 { color: #032a2a; margin-top: 0; }
   margin: 18px 0;
 }
 .image-row img {
+  width: min(48%, 520px);
   max-width: 100%;
   height: auto;
   display: block;
