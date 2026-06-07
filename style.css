@@ -78,12 +78,14 @@ section h1 { color: #032a2a; margin-top: 0; }
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 24px;
   margin: 18px 0;
 }
 .image-row img {
-  width: min(48%, 520px);
-  max-width: 100%;
+  flex: 1 1 540px;
+  max-width: 620px;
+  min-width: 300px;
+  width: 100%;
   height: auto;
   display: block;
 }
